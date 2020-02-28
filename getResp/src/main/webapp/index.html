@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+   </head>
+   <body class="container-fluid">
+       
+   		<div class="col-12 mx-auto form-group form-inline">
+              <label for="Start date">Start Date:</label><input type="datetime-local" class="form-control startDate" id="start"> 
+              <label for="End date">End Date:</label><input type="datetime-local" class="form-control endDate" id="end">&nbsp;<input type="submit" class="form-control btn btn-primary submitBtn" id="submit">&nbsp;
+              <div class="dropdown">
+			        <button class="dropbtn"><i class='fas fa-calendar-alt' style='font-size:18px'></i></button>
+			        <div class="dropdown-content">
+			        <a href="#" class="drop-item">Last 15 min</a>
+			        <a href="#" class="drop-item">Last 30 min</a>
+			        <a href="#" class="drop-item">Last 1 hour</a>
+			        <a href="#" class="drop-item">Last 2 hour</a>
+			        <a href="#" class="drop-item">Last 6 hour</a>
+			        <a href="#" class="drop-item">Last 12 hour</a>
+			        <a href="#" class="drop-item">Last 24 hour</a>
+			        </div>
+      		 </div>
+        </div>
+       <div class="row" id="chartDiv"></div>
+        <!--  <div class="row m-0 col-12 border border-2 border-danger" id="responseChartDiv">
+           <canvas id="response"></canvas>
+       </div>-->
+       <div class="row" id="responseDiv"></div>
+       
+    <script src = "script/highcharts.js"></script>    
+    <script src="script/Chart.bundle.js"></script>
+    <script src="script/moment.min.js"></script>
+    <script src="script/script1.js"></script>
+</body>
+</html>
